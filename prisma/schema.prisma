@@ -9,3 +9,15 @@ datasource db {
   provider = "postgresql"
   url = env("POSTGRES_URL") // uses connection pooling
 }
+
+model Debug{
+  id Int @id @default(autoincrement())
+  title String @db.VarChar()
+  description String @db.Text
+}
+
+enum Status {
+  OPEN
+  IN_PROGRESS
+  CLOSED
+}
