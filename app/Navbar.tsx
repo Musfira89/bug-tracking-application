@@ -1,12 +1,13 @@
+'use client'
 import React from "react";
 import Link from "next/link";
 import { VscDebugStart } from "react-icons/vsc";
 
 const Navbar = () => {
   const links = [
-    { id: 1 , nav: "Dashboard", href: "/" },
-    { id: 2 , nav: "Issues", href: "/issues" },
-    { id: 3 , nav: "Documentation", href: "/doc" },
+    {  nav: "Dashboard", href: "/" },
+    {  nav: "Debug", href: "/debug" },
+    {  nav: "Documentation", href: "/documentation" },
 
   ];
 
@@ -20,7 +21,7 @@ const Navbar = () => {
         <ul className="flex space-x-6">
           {links.map((link) => (
             <Link
-              key={link.id}
+              key={link.href}
               className="text-zinc-500 hover:text-black transition-colors"
               href={link.href}
             >{link.nav}
