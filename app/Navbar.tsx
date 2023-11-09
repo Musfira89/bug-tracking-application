@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const links = [
     {  nav: "Dashboard", href: "/" },
-    {  nav: "Debug", href: "/debug" },
+    {  nav: "Bug", href: "/bug" },
     {  nav: "Documentation", href: "/documentation" },
 
   ];
